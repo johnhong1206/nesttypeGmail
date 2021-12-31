@@ -9,7 +9,7 @@ function Login() {
   const signIn = () => {
     auth
       .signInWithPopup(provider)
-      .then((result) => {
+      .then(() => {
         router.push("/");
       })
       .catch((error) => alert(error.message));

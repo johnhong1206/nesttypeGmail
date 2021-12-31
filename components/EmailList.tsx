@@ -87,39 +87,7 @@ function EmailList() {
         </div>
       </div>
       <div className="w-full h-screen overflow-y-scroll">
-        {emailList.map((email: any) => {
-          return (
-            <EmailRow
-              key={email.id}
-              id={email.id}
-              message={email.message}
-              subject={email.subject}
-              timestamp={new Date(
-                email.timestamp?.seconds * 1000
-              ).toUTCString()}
-              title={email.to}
-              email={email}
-              description={email.description}
-            />
-          );
-        })}{" "}
-        {emailList.map((email: any) => {
-          return (
-            <EmailRow
-              key={email.id}
-              id={email.id}
-              message={email.message}
-              subject={email.subject}
-              timestamp={new Date(
-                email.timestamp?.seconds * 1000
-              ).toUTCString()}
-              title={email.to}
-              email={email}
-              description={email.description}
-            />
-          );
-        })}{" "}
-        {emailList.map((email: any) => {
+        {emailList.map((email) => {
           return (
             <EmailRow
               key={email.id}
@@ -135,6 +103,7 @@ function EmailList() {
             />
           );
         })}
+
         <div className=" pb-72" />
       </div>
     </div>

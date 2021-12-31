@@ -23,7 +23,7 @@ export interface IEmail {
   to: string;
   email: any;
   description: string;
-  default: null;
+  default: any;
 }
 
 export interface IModal {

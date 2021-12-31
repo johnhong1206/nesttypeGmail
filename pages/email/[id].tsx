@@ -24,6 +24,9 @@ import { IEmail } from "../../Interfaces/Interfaces";
 const Email: FC = () => {
   const router = useRouter();
   const [email] = useRecoilState<IEmail>(emailState);
+  const subject = email && (email.subject as string);
+  const receiver = email && (email.to as string);
+  const message = email && (email.message as string);
 
   const timeStamp =
     email && new Date(email?.timestamp?.seconds * 1000).toISOString();
@@ -84,13 +87,13 @@ const Email: FC = () => {
         <div className="bg-white flex flex-col border-2 border-gray-200 shadow-lg p-5 m-5 min-h-[80vh]">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="flex items-center justify-center space-x-4">
-              <h2 className="font-bold">{email?.subject}</h2>
+              <h2 className="font-bold">{subject}</h2>
               <MdLabelImportant className="w-6 h-6 text-yellow-500" />
-              <h2>{email?.to}</h2>
+              <h2>{receiver}</h2>
             </div>
             <p className="mt-1 lg:mt-0 text-xs lg:text-base">{timeStamp}</p>
           </div>
-          <div className="mt-10">{email.message}</div>
+          <div className="mt-10">{message}</div>
         </div>
       </main>
     </div>
