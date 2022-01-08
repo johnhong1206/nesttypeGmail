@@ -1,5 +1,5 @@
 This is Gmail UI Clone
-This Project is built with NextJs, Recoil, Tailwind CSS, Spotify API
+This Project is built with NextJs, Typescrypt Recoil, Tailwind CSS, Spotify API
 
 ---Main Function---
 1) Email Posting 
