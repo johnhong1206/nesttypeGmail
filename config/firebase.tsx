@@ -3,13 +3,13 @@ import { createContext } from "react";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDZFvITIGdw-t_ZOTGV-Bjy67fwr1E3uhA",
-  authDomain: "zonghong-c19ad.firebaseapp.com",
-  projectId: "zonghong-c19ad",
-  storageBucket: "zonghong-c19ad.appspot.com",
-  messagingSenderId: "499193547793",
-  appId: "1:499193547793:web:4f430fe0a2c1f1747ab5b0",
-  measurementId: "G-3W7YLSZ7WY",
+  apiKey: "AIzaSyC9H5xdfTIfl9irvXjgRGtVj-WPpy6IWpo",
+  authDomain: "deamticket-97bb6.firebaseapp.com",
+  projectId: "deamticket-97bb6",
+  storageBucket: "deamticket-97bb6.appspot.com",
+  messagingSenderId: "649464430028",
+  appId: "1:649464430028:web:9a233bd8f9e4cf7c5f7169",
+  measurementId: "G-LP0WHFS2SY",
 };
 
 try {
